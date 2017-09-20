@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learning JS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+    .container {
+        padding: 20px;
+    }
+
+    .btn {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        margin-bottom: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div id="withPromise" class="col-md-4 container">
+            <label for="PromiseUserid">User ID:</label>
+            <input type="text" class="form-control" id="PromiseUserid" value="1">
+            <button id="getDataWithPromise" class="btn btn-default" onclick="getPeopleDataViaPromiseSyntax()">Get json via promise</button>
+            <pre id="promiseJson">
+            </pre>
+        </div>
+        <div id="withAsync" class="col-md-4 container">
+            <label for="PromiseUserid">User ID:</label>
+            <input type="text" class="form-control" id="AsyncUserid" value="7">
+            <button id="getDataWithAsync" class="btn btn-default" onclick="getPeopleDataViaAsyncSyntax()">Get json via async</button>
+            <pre id="asyncJson"></pre>
+        </div>
+        <div id="withAsync" class="col-md-4 container">
+            <label for="PromiseUserid">User ID:</label>
+            <input type="text" class="form-control" id="AsyncUserid" value="7">
+            <button id="getDataWithAsync" class="btn btn-default" onclick="getPeopleDataViaAsyncSyntax()">Get json via async</button>
+            <pre id="asyncJson"></pre>
+        </div>
+    </div>
+    <!-- <script src="getPeopleData.js"></script> -->
+    <script src="getPeopleDataViaPromise_2.js"></script>
+    <script src="getPeopleDataViaAsync.js"></script>
+    <!-- <script src="old.js"></script> -->
+</body>
+
+</html>
